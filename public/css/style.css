@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#wrapper{
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    width: 250px;
+    display: block;
+    background-image: linear-gradient(#7386D5, midnightblue)
+
+}
+
+  #sidebar{
+    height: 100%;
+    padding: 21px;
+    background-image: linear-gradient(#7386D5, midnightblue);  
+    color: white;
+}
+
+
+
+/* .sidebar:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sidebar:after, .sidebar:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+} */
+
+.navbar-custom-color{
+    background-color: #C1ADF1;
+    color: white;
+}
+
+.custom-color{
+    background-color: #C1ADF1;
+    color: white;
+}
+
+.main-panel {
+    max-height: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: calc(100% - 250px);
+}
+
+.navbar-custom-color{
+    background-color: #C1ADF1;
+}
+
+.card-border-color{
+    border-color:#C1ADF1; 
+}
+
+.navbar-custom-color a{
+    color: white;
+}
+
+.navbar{
+    border-radius: 0px;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+#sidebar > a {
+    color: inherit;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.components li a, a:focus {
+    color: inherit;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+.sidebar-pix{
+    padding: 20px;
+}
+
+.sidebar-pix img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.sidebar-pix h4{
+    text-align: center
+}
+
+
+.g-btn-container{
+    width: 100%;
+    height: 60px;
+    padding-right: 10px;
+}
+
+.submit-btn{
+    margin-top: 15px;
+    color: white;
+    background-color: #02b3e4;
+}
+
+.generate-btn{
+    box-shadow: 0 4px 16px 4px rgba(17,22,26,.16), 
+                0 4px 8px 0 rgba(17,22,26,.08),
+                0 16px 24px 0 rgba(17,22,26,.08);
+    background: #02b3e4;
+    color: #fff;
+    padding: 1.7rem 3rem;
+    border-radius: .25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.generate-btn:hover{
+    text-decoration: none;
+}
+
+.widget-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+    justify-content: space-between;
+}
+
+.widget{
+    width: 22%;
+    margin: 5px 10px;
+    height: 150px;
+    border-radius: .25rem;
+    padding: 10px;
+}
+
+.count{
+    font-size: 400%;
+    font-weight: bold;
+    color: white;
+}
+
+.description{
+    text-align: right;
+    color: white;
+}
+
+.widget-1{
+    background-image: linear-gradient(#56D3F3, #0CEBD0);
+}
+
+.widget-2{
+    background-image: linear-gradient(#F4B4D7, #FABFA1);
+}
+
+.widget-3{
+    background-image: linear-gradient(#5078E6, #38CBF6);
+}
+
+.widget-4{
+    background-image: linear-gradient(#7956e7, #cabfea);
+}
+
+.mytable{
+    
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 600px){
+    #mynav{
+        position: relative;
+        transform: translate(0, 0);
+        background-color: #02b3e4;
+    }
+
+    #mywrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        
+    }
+
+    .mycontent{
+        width: auto;
+        flex-grow: 1;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
